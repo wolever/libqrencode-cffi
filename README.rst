@@ -11,7 +11,7 @@ Installing
 
 ::
 
-    $ pip install libqrencode
+    $ pip install libqrencode-cffi
 
 
 Examples
