@@ -19,7 +19,7 @@ setup(
         "Development Status :: 4 - Beta",
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: Implementation :: PyPy"
+        "Programming Language :: Python :: Implementation :: PyPy",
         "License :: OSI Approved :: BSD License",
     ],
     packages=find_packages(),

@@ -6,6 +6,14 @@ libqrencode (http://fukuchi.org/works/qrencode/index.en.html).
 
 Python 2, Python 3, and PyPy compatible!
 
+Installing
+----------
+
+::
+
+    $ pip install libqrencode
+
+
 Examples
 --------
 
@@ -64,4 +72,3 @@ Raw data bitmasks:
 * ``DATA_ALIGNMENT_PATTERN`` (alignment pattern)
 * ``DATA_FINDER_PATTERN`` (finder pattern and separator)
 * ``DATA_NON_DATA`` (non-data modules (format, timing, etc.))
-
