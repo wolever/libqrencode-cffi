@@ -10,13 +10,14 @@ os.chdir(os.path.dirname(sys.argv[0]) or ".")
 setup(
     name="libqrencode",
     version="0.1",
-    description="Fast, robust, and (mostly) complete cffi-based bindings for libqrencode",
+    description="Fast, robust, and less incomplete cffi-based bindings for libqrencode",
     long_description=open("README.rst", "rt").read(),
     url="https://github.com/wolever/libqrencode",
     author="David Wolever",
     author_email="david@wolever.net",
     classifiers=[
-        "Programming Language :: Python",
+        "Development Status :: 4 - Beta",
+        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: Implementation :: PyPy"
         "License :: OSI Approved :: BSD License",
