@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+import sys
+import libqrencode as qr
+
+qr.QRCode(sys.argv[1], mode=qr.MODE_NUM).get_im().show()
