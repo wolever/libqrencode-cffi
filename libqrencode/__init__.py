@@ -89,13 +89,14 @@ class QRCode(object):
                 mode = MODE_8
             self.mode = mode
 
-            err = lib.QRinput_append(input, mode, len(data), data)
-            if err:
-                if ffi.errno == lib.ENOMEM:
-                    raise MemoryError("Couldn't allocate memory for QR code")
-                raise ValueError("Invalid mode (%s) + data (%r) combination" %(
-                    MODE_NAMES[mode], data,
-                ))
+            if data:
+                err = lib.QRinput_append(input, mode, len(data), data)
+                if err:
+                    if ffi.errno == lib.ENOMEM:
+                        raise MemoryError("Couldn't allocate memory for QR code")
+                    raise ValueError("Invalid mode (%s) + data (%r) combination" %(
+                        MODE_NAMES[mode], data,
+                    ))
 
             qrc = lib.QRcode_encodeInput(input)
             if qrc == ffi.NULL:

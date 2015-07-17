@@ -2,4 +2,4 @@
 import sys
 import libqrencode as qr
 
-qr.QRCode(sys.argv[1], mode=qr.MODE_NUM).get_im().show()
+qr.QRCode(sys.argv[1]).get_im().show()
